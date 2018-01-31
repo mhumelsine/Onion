@@ -1,0 +1,22 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Logistics/v15/Server/sqlite3
+/Logicistics.ViewModels/obj/Debug/netcoreapp2.0
+/Logicistics.ViewModels/bin/Debug/netcoreapp2.0
+/Logicistics.ViewModels/obj
+/Logiistics.Core/bin/Debug/netcoreapp2.0
+/Logiistics.Core/obj/Debug/netcoreapp2.0
+/Logiistics.Core/obj
+/Logisitics.Infrastrucure/bin/Debug/netcoreapp2.0
+/Logisitics.Infrastrucure/obj/Debug/netcoreapp2.0
+/Logisitics.Infrastrucure/obj
+/Logistics/bin/Debug/netcoreapp2.0
+/Logistics/obj
+/Services/bin/Debug/netcoreapp2.0
+/Services/obj/Debug/netcoreapp2.0
+/Services/obj
+/Logistics.MVC/bin/Debug/netcoreapp2.0
+/Logistics.MVC/obj/Debug/netcoreapp2.0
+/Logistics.MVC/obj
