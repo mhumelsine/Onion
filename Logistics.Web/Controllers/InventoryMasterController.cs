@@ -10,14 +10,13 @@ using System.Threading.Tasks;
 
 namespace Logistics.Web.Controllers
 {
-    public class InventoryMasterController : Controller
+    [Route("[controller]")]
+    public class InventoryMasterController : ControllerBase
     {
-        private readonly CommandDispatcher dispatcher;
         private readonly IInventoryStore inventoryStore;
 
-        public InventoryMasterController(CommandDispatcher dispatcher, IInventoryStore inventoryStore)
+        public InventoryMasterController(IInventoryStore inventoryStore, CommandRunner executor) : base (executor)
         {
-            this.dispatcher = dispatcher;
             this.inventoryStore = inventoryStore;
         }
 
@@ -26,15 +25,15 @@ namespace Logistics.Web.Controllers
         {
             var command = new CreateInventoryMasterCommand(inventoryMaster, inventoryStore);
 
-            var result = dispatcher.Execute(command);
+            Execute(command);
 
-            if (result.State == CommandState.Succeeded)
+            if (command.State == CommandState.Succeeded)
             {
                 var uri = Url.Action("Get", new { id = inventoryMaster.Id });
                 return Created(uri, inventoryMaster);
             }
 
-            return BadRequest(result.ErrorDictionary);
+            return BadRequest(command.ErrorDictionary);
         }
     }
 }

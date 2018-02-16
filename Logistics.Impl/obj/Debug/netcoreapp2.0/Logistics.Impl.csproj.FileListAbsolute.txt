@@ -1,0 +1,13 @@
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\obj\Debug\netcoreapp2.0\Logistics.Impl.csprojResolveAssemblyReference.cache
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\obj\Debug\netcoreapp2.0\Logistics.Impl.csproj.CoreCompileInputs.cache
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\obj\Debug\netcoreapp2.0\Logistics.Impl.AssemblyInfoInputs.cache
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\obj\Debug\netcoreapp2.0\Logistics.Impl.AssemblyInfo.cs
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\bin\Debug\netcoreapp2.0\Logistics.Impl.deps.json
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\bin\Debug\netcoreapp2.0\Logistics.Impl.dll
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\bin\Debug\netcoreapp2.0\Logistics.Impl.pdb
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\bin\Debug\netcoreapp2.0\Isf.XCutting.dll
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\bin\Debug\netcoreapp2.0\Logistics.Core.dll
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\bin\Debug\netcoreapp2.0\Logistics.Core.pdb
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\bin\Debug\netcoreapp2.0\Isf.XCutting.pdb
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\obj\Debug\netcoreapp2.0\Logistics.Impl.dll
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Logistics.Impl\obj\Debug\netcoreapp2.0\Logistics.Impl.pdb

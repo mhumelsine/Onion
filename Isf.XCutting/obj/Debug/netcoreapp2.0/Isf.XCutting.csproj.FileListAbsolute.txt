@@ -1,0 +1,9 @@
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\bin\Debug\netcoreapp2.0\Isf.XCutting.deps.json
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\bin\Debug\netcoreapp2.0\Isf.XCutting.dll
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\bin\Debug\netcoreapp2.0\Isf.XCutting.pdb
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\obj\Debug\netcoreapp2.0\Isf.XCutting.csprojResolveAssemblyReference.cache
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\obj\Debug\netcoreapp2.0\Isf.XCutting.csproj.CoreCompileInputs.cache
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\obj\Debug\netcoreapp2.0\Isf.XCutting.AssemblyInfoInputs.cache
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\obj\Debug\netcoreapp2.0\Isf.XCutting.AssemblyInfo.cs
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\obj\Debug\netcoreapp2.0\Isf.XCutting.dll
+C:\Users\mhumelsine\Documents\Visual Studio 2017\Projects\CrossCutting\Isf.XCutting\obj\Debug\netcoreapp2.0\Isf.XCutting.pdb

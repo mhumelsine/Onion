@@ -8,7 +8,7 @@ using Logistics.Core.Stores;
 
 namespace Logistics.Core.Commands.Inventory
 {
-    public class CreateInventoryMasterCommand : CommandBase
+    public class CreateInventoryMasterCommand : Command
     {
         private readonly InventoryMaster inventoryMaster;
         private readonly IInventoryStore inventoryStore;
@@ -18,23 +18,23 @@ namespace Logistics.Core.Commands.Inventory
             this.inventoryMaster = inventoryMaster;
             this.inventoryStore = inventoryStore;
         }
-        public override ObjectValidationResult PreValidate()
+
+        public override IEnumerable<ValidationError> Validate()
         {
             var existingInventoryItem = inventoryStore.GetMasterByLin(inventoryMaster.LIN);
 
-            if(existingInventoryItem != null)
+            if (existingInventoryItem != null)
             {
-                return ObjectValidationResult.Create(
-                    string.Format("LIN: {0} is already is use by: {1}", inventoryMaster.LIN, inventoryMaster.GeneralNomenclature),
-                    "LIN");
-            }
+                var property = nameof(inventoryMaster.LIN);
 
-            return ObjectValidationResult.OK;
+                yield return new ValidationError(property,
+                    string.Format("LIN: {0} is already is use by: {1}", property, inventoryMaster.GeneralNomenclature));
+            }
         }
-        public override CommandResult Execute()
+
+        public override void Execute()
         {
             inventoryStore.Save(inventoryMaster);
-            return CommandResult.OK;
         }
     }
 }

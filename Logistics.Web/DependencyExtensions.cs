@@ -18,12 +18,15 @@ namespace Logistics.Web
 
             services.AddScoped<IUsernameProvider, StaticUsernameProvider>(provider => new StaticUsernameProvider("Test User"));
 
-            services.AddScoped<ILogger, NLogLogger>();
+            services.AddScoped<ILogger, NLogLogger>(provider => new NLogLogger("SPA", new StaticUsernameProvider("Test User")));
 
             services.AddScoped<ITransaction, EfTransaction>();
-            services.AddScoped<ITransactionFactory, EfTransactionFactory>();
+            services.AddScoped<ITransactionFactory, EfTransactionFactory>(factory => 
+                new EfTransactionFactory((DbContext)factory.GetRequiredService(typeof(LogisticsContext))));
 
             services.AddScoped<CommandContext, CommandContext>();
+
+            services.AddScoped<CommandRunner, CommandRunner>();
 
             //services.AddScoped<InventoryMasterManager, InventoryMasterManager>();
         }

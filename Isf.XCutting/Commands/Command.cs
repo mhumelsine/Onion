@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Isf.XCutting.Commands
 {
-    public class CommandResult
+    public abstract class Command
     {
         private IDictionary<string, List<string>> errors;
 
@@ -36,60 +36,67 @@ namespace Isf.XCutting.Commands
             }
         }
 
-        public CommandState State { get; set; }
-
-
-        public static CommandResult OK = new CommandResult
-        {
-            State = CommandState.Succeeded
-        };
-
-        public static CommandResult Create(ObjectValidationResult validationResult)
-        {
-            var result = new CommandResult();
-
-            foreach (var error in validationResult.Errors)
-            {
-                result.AddError(
-                    error.MemberNames.FirstOrDefault(), 
-                    error.ErrorMessage, 
-                    CommandState.ValidationFailed);
+        private CommandState state;
+        public CommandState State {
+            get {
+                return state;
             }
+            set {
+                if(state != value)
+                {
+                    state = value;
 
-            return result;
+                    foreach (var observer in observers)
+                    {                        
+                        observer(state);
+                    }
+                }
+
+            }
         }
 
-        public static CommandResult Create(Exception exception)
+        public bool RequiresTransaction { get; }
+
+        public Command()
         {
-            var result = new CommandResult();
-
-            result.AddError(exception.Message, CommandState.ExecutionFailed);
-
-            return result;
+            State = CommandState.NotValidated;
         }
 
-        public void AddError(string errorMessage, CommandState state)
+        public void AddError(string errorMessage)
         {
-            AddError(string.Empty, errorMessage, state);
+            AddError(string.Empty, errorMessage);
         }
-        public void AddError(string property, string errorMessage, CommandState state)
+        public void AddError(string property, string errorMessage)
         {
             if (errors == null)
             {
                 errors = new Dictionary<string, List<string>>();
             }
 
-            List<string> errorCollection;
-
             //if no collection exists, create one
-            if (!errors.TryGetValue(property, out errorCollection))
+            if (!errors.TryGetValue(property, out List<string> errorCollection))
             {
                 errorCollection = new List<string>();
                 errors[property] = errorCollection;
             }
 
             errorCollection.Add(errorMessage);
-            State = state;
+        }
+
+        public virtual IEnumerable<ValidationError> Validate()
+        {
+            return Enumerable.Empty<ValidationError>();
+        }
+
+        public abstract void Execute();
+
+        public virtual void Undo() { }
+
+        private HashSet<Action<CommandState>> observers = new HashSet<Action<CommandState>>();
+
+        public void OnStateChange(Action<CommandState> handler)
+        {
+            observers.Add(handler);
         }
     }
 }

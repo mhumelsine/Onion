@@ -9,4 +9,8 @@
     <PackageReference Include="NLog.Extensions.Logging" Version="1.0.0-rtm-rc6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+
 </Project>

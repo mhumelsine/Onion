@@ -1337,7 +1337,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "2gQlKScQdjaUrP4qvBBZXLsg52NgKz1mdTZ2vxcvUoi+2GttaWbS9EDNzJfPFVNKigki9WLB+EdNlkVPq20HOA==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -1933,7 +1933,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "jyEb9r+oFZPnKcxW3XgLMjuVbY+XwM2y8zeeMSciCOa/0RqChmKSyC5NfiS8XMdYKlh46NvOeOQA13qAKhcGJA==",
+      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -2858,11 +2858,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "c:\\users\\mhumelsine\\documents\\visual studio 2017\\Projects\\CrossCutting\\Logistics.Core\\Logistics.Core.csproj",
+      "projectUniqueName": "C:\\Users\\mhumelsine\\Documents\\Visual Studio 2017\\Projects\\CrossCutting\\Logistics.Core\\Logistics.Core.csproj",
       "projectName": "Logistics.Core",
-      "projectPath": "c:\\users\\mhumelsine\\documents\\visual studio 2017\\Projects\\CrossCutting\\Logistics.Core\\Logistics.Core.csproj",
+      "projectPath": "C:\\Users\\mhumelsine\\Documents\\Visual Studio 2017\\Projects\\CrossCutting\\Logistics.Core\\Logistics.Core.csproj",
       "packagesPath": "C:\\Users\\mhumelsine\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\mhumelsine\\documents\\visual studio 2017\\Projects\\CrossCutting\\Logistics.Core\\obj\\",
+      "outputPath": "C:\\Users\\mhumelsine\\Documents\\Visual Studio 2017\\Projects\\CrossCutting\\Logistics.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2881,8 +2881,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\users\\mhumelsine\\documents\\visual studio 2017\\Projects\\CrossCutting\\Isf.XCutting\\Isf.XCutting.csproj": {
-              "projectPath": "c:\\users\\mhumelsine\\documents\\visual studio 2017\\Projects\\CrossCutting\\Isf.XCutting\\Isf.XCutting.csproj"
+            "C:\\Users\\mhumelsine\\Documents\\Visual Studio 2017\\Projects\\CrossCutting\\Isf.XCutting\\Isf.XCutting.csproj": {
+              "projectPath": "C:\\Users\\mhumelsine\\Documents\\Visual Studio 2017\\Projects\\CrossCutting\\Isf.XCutting\\Isf.XCutting.csproj"
             }
           }
         }

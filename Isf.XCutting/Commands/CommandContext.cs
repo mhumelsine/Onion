@@ -8,8 +8,6 @@ namespace Isf.XCutting.Commands
 {
     public class CommandContext
     {
-        public ITransaction CurrentTransaction { get; set; }
-
         public ITransactionFactory TransactionFactory { get; set; }
 
         public ILogger Logger { get; set; }

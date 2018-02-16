@@ -1,5 +1,4 @@
-﻿using Isf.XCutting.Commands;
-using Isf.XCutting.Logging;
+﻿using Isf.XCutting.Logging;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,24 +19,9 @@ namespace Logistics.Impl.Stores
             this.logger = logger;
         }
 
-        public CommandResult Save()
+        public void Save()
         {
-            var result = new CommandResult();
-
-            try
-            {
-                context.SaveChanges();
-                result.State = CommandState.Succeeded;
-            }
-            catch (Exception ex)
-            {
-                var error = "Error saving changes to the database";
-
-                logger.Error(error, ex);
-
-                result.AddError(error, CommandState.ExecutionFailed);
-            }
-            return result;
+            context.SaveChanges();
         }
     }
 }
